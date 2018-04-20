@@ -1,2 +1,2 @@
 # operation-msp
-practice for exams in OOP2
+practice for exams in OOP1 and OOP2
