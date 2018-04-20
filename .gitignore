@@ -1,0 +1,14 @@
+#ignore folder target
+/target/
+
+# ignore  .jar, .class, .project, idea
+*.idea
+*.jar
+*.class
+*.project
+
+#.ignore  .settings doc
+.settings/
+
+.classpath
+.checkstyle
