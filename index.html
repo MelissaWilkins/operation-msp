@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" name="viewport"
+          content="width=device-width, initial-scale=1.0" charset="utf-8"/>
+
+    <!-- Name des Faches -->
+    <title>Notes - Template</title>
+
+
+        <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+        <script src="jslibraries/jquery-3.2.1.min.js"></script>
+        <script src="jslibraries/scrolloverflow.js"></script>
+        <script src="jslibraries/jquery.fullPage.min.js"></script>
+        <script src="jslibraries/TweenMax.min.js"></script>
+        <script src="jslibraries/TimelineMax.min.js"></script>
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/jquery.fullPage.css">
+        <link rel="stylesheet" href="css/animation.css">
+        <!--Materialize-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+        <script src="jslibraries/materialize.min.js"></script>
+
+
+
+    <!--Initialize fullPage.js-->
+    <script>
+        $(document).ready(function() {
+
+
+            $('#fullpage').fullpage({
+                sectionsColor: ['#5baafa', '#5baafa', '#5baafa', '#5baafa', '#5baafa'],
+                anchors:['titlePage','theory','summary'],
+                menu:'#menuVertical',
+                loopHorizontal:false,
+                slidesNavigation:true,
+                scrollOverflow:true,
+                onLeave: function(index, nextIndex, direction){
+
+                },
+                onSlideLeave: function( anchorLink, index, slideIndex, direction, nextSlideIndex) {
+                }
+
+                });
+            $('.collapsible').collapsible();
+        });
+    </script>
+</head>
+
+<body>
+
+<!-- Vertikale Navigation (links) -->
+<!-- data-menuanchor und href muessen mit den oben definierten anchors uebereinstimmen -->
+<ul id="menuVertical">
+    <li data-menuanchor="titlePage" class="active"><a href="#titlePage">Start</a></li>
+    <li data-menuanchor="theory" class="active"><a href="#theory">Theorie</a></li>
+    <li data-menuanchor="summary"><a href="#summary">Zusammenfassung</a></li>
+</ul>
+
+
+<div id="fullpage">
+
+    <!-- Titelseite -->
+    <div class="section sectionTitle">
+        <div class="slide">
+            <div id="title">
+                <h1><br><br>Name des Faches</h1>
+
+            </div>
+
+            <a href="#theorie">
+                <svg width="100" height="100" viewBox="0 0 73 38">
+                    <g transform="translate(-23 -51)">
+                        <path id="arrowDown"transform="matrix(1 0 0 .61 0 35)" d="m23 26 73-1e-6 -37 64z" fill="#ffff00"/>
+                    </g>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Theorie -->
+    <div class="section sectionTheory">
+        <div class="slide slideTheory1">
+
+
+            <h1>Theory</h1>
+
+
+            <div class="infoCard summary">
+                Inhalt der weissen Box (hoehe veraendert sich mit dem Inhalt)
+                <br>
+                weiterer Inhalt<br>
+                <br>
+                <ul>
+                <li>step 1</li>
+                <li>step 2</li>
+                </ul>
+
+
+            </div>
+
+        </div>
+
+        <div class="slide slideTheory2">
+            <h1>Schichten im OSI-Modell</h1>
+
+            <!-- Beispiel: Ausklappbare Box -->
+            <div class="cardContainer">
+                <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">expand_more</i>Punkt 1</div>
+                    <div class="collapsible-body white"><span>Mehr Informationen zu Punkt 3.</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">expand_more</i>Punkt 2</div>
+                    <div class="collapsible-body white"><span>Mehr Informationen zu Punkt 3.</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">expand_more</i>Punkt 3</div>
+                    <div class="collapsible-body white"><span>Mehr Informationen zu Punkt 3.</span></div>
+                </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Zusammenfassung -->
+    <div class="section sectionSummary">
+        <div class="infoIcon">!</div><h1>Zusammenfassung</h1>
+
+        <div class="infoCard summary">
+            Inhalt der weissen Box (hoehe veraendert sich mit dem Inhalt)
+            <br><br>
+            weiterer Inhalt
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="js/animation.js"></script>
+
+</body>
+</html>

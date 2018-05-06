@@ -1,0 +1,157 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+body h1{
+    font-size: 40px;
+    color:#0B273B;
+}
+body p{
+    font-size: 14px;
+}
+.section{
+    text-align:center;
+}
+
+/* -------------------- Replay-Button -------------------- */
+.replay{
+    width:min-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* -------------------- Ende Replay-Button -------------------- */
+
+/* -------------------- Ausrufezeichen Kreis -------------------- */
+.infoIcon{
+    width:100px;
+    height:100px;
+    background-color: #0B273B;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size:80px;
+    color:#FFFF00;
+}
+/* -------------------- Ende Ausrufezeichen Kreis -------------------- */
+
+/* -------------------- Box fuer Summary/Facts -------------------- */
+.infoCard{
+    box-sizing: border-box;
+    background-color:white;
+    /*center text*/
+    display: flex;
+    align-items: left;
+    /*center div*/
+    margin-left: auto;
+    margin-right: auto;
+    /*border*/
+    border-radius: 2px;
+
+    border-color:#0B273B;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    z-index:0;
+}
+/* -------------------- Ende Box fuer Summary/Facts -------------------- */
+
+/* -------------------- Titelseite -------------------- */
+#title{
+    width:60vw;
+    background-color: white;
+    margin:auto;
+    border-radius: 10px;
+    border:15px solid #0B273B;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    font-size: 30px;
+    color:#0B273B;
+}
+
+
+#arrowDown{
+    box-shadow: 0 10px 10px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+/* -------------------- Ende Titelseite -------------------- */
+
+/* -------------------- Vertikale Navigation -------------------- */
+#menuVertical {
+    position:fixed;
+    top: 120px;
+    left: 60px;
+    transform: translate(-50%, -50%);
+    background-color:#0B273B;
+    opacity:0.8;
+    padding:15px 20px 5px 80px;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    z-index:1;
+}
+#menuVertical li{
+    margin-bottom: 10px;
+    color:white;
+    list-style: square outside none;
+}
+#menuVertical li.active,
+#menuVertical li.active a{
+    color:#FFFF00;
+}
+#menuVertical li:hover,
+#menuVertical a:hover{
+    color:#FFFF00;
+}
+#menuVertical a{
+    text-decoration: none;
+    color:white;
+    font-size: 14px;
+}
+/* -------------------- Ende vertikale Navigation -------------------- */
+
+
+
+
+
+/* -------------------- Ausklappbare Box -------------------- */
+.cardContainer{
+    box-sizing: border-box;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    text-align:left;
+    font-size: 16px;
+    margin-bottom:150px;
+}
+/*Collapsible icon change*/
+.collapsible li.active i {
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+/* -------------------- Ende ausklappbare Box -------------------- */
+
+/* -------------------- Zusammenfassung -------------------- */
+.summary{
+    padding:15px;
+    width:60vw;
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color:#0B273B;
+}
+/* -------------------- Ende Zusammenfassung -------------------- */
+
+/* -------------------- Anfang Beispiel -------------------- */
+.element1{
+    display:inline-block;
+    margin-top:50px;
+    width:200px;
+    height:200px;
+    background-color:grey;
+}
+.element2{
+    display:inline-block;
+    margin-left:10px;
+    width:50px;
+    height:30px;
+    background-color:red;
+}
+
+
+/* -------------------- Ende Beispiel -------------------- */
