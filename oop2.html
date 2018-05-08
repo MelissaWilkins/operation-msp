@@ -5,7 +5,7 @@
           content="width=device-width, initial-scale=1.0" charset="utf-8"/>
 
     <!-- Name des Faches -->
-    <title>Software Construction Sem2</title>
+    <title>OOP2 - notes</title>
 
 
         <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -67,7 +67,7 @@
     <div class="section sectionTitle">
         <div class="slide">
             <div id="title">
-                <h1><br><br>Software Construction Sem2</h1>
+                <h1><br><br>OOP2</h1>
 
             </div>
 
@@ -87,11 +87,60 @@
         <div class="slide slideTheory1">
 
 
-            <h1>Theory</h1>
+            <h1>Listen, Tabellen & Exceptions</h1>
 
 
             <div class="infoCard summary">
-                Inhalt der weissen Box (hoehe veraendert sich mit dem Inhalt)
+              <p> <p> Vorgehensweise bei einem UI design.<br></p>
+                <br><ul>
+              <li>1. Wireframe</li>
+              <li>2. Presentation Model</li>
+               <li> 3. UI</li>
+                </ul>
+                <br><p>
+                Beim Wireframe entsteht das grundprinzip des Projektes, Beim Presentation Model unterscheidet man zeischen Inhalt
+                und funktionalität
+                Beim UI erstellt man die BIndings.
+                <br>
+                FXColections: Observable.Collections
+                ListView hat eine Spalte
+                TableView hat mehrer Spalten
+                beide basieren auf observable
+                <br>
+                ex simpleList
+                Test add (1. prüfe ob die liste leer initialisiert is. 2. führe die add Methode durch
+                und prüfe dass das richtige Element hinzugeführt wurde.)
+                Die Funktionalität:
+                Die Liste hat einen Knopf, wenn ich auf den Knopf drücke füge ich ein element hinzu
+                das Element an der erste position ist die 1, das zweite Element wird die 2 sein
+                Nachdem die Funktionalität steht muss man diese änderungen im UI
+                hinzufügen.</p>
+
+                <br>
+                ex Nationalsammlung:
+                Man hat daten in form einer txt file. Diese sollen tabllarisch dargestellt werden.
+                1. man soll die daten einlesen
+
+                <br>
+                Exceptions:
+                public void doSomething () throws Exception {//declares that this method could cause an Exception
+                if ( <Test ob Ausnahmesituation besteht>){
+                    throw new Exception("so'n Mist“);
+                }
+                // Anweisungen für normale Verarbeitung
+                werfen der Exception Methode wird sofort verlassen
+                Wird ausgeführt falls keine Exception geworfen werden musste
+                }<br>
+                runtime exceptions (unchecked exceptions) ohne aufwand für Programmierer
+                checked exceptions muss man programmieren.
+                Checked vs Unchecked
+                Checked sind vorhersehbare Exceptions. Können vom Benutzer behoben werden
+                Unchecked Exceptions tretten während dem Prgrammieren auf und müssen vom Programmierer behoben werden.
+                finally: Finally kommt an ende des catchblockes und wird egal was ausgeführt.
+
+                </p>
+
+
 
             </div>
 
