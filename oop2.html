@@ -33,7 +33,12 @@
 
             $('#fullpage').fullpage({
                 sectionsColor: ['#5baafa', '#5baafa', '#5baafa', '#5baafa', '#5baafa'],
-                anchors:['titlePage','theory','summary'],
+                anchors:['titlePage','datenstrukturen',
+                    /*'Generics', 'Lambdas', 'Streams', 'GUIs mit JavaFX',
+                    'Model und View',*/
+                    'theory',
+                    /*'Aufteilung des UI',
+                    'Threads','summary'*/],
                 menu:'#menuVertical',
                 loopHorizontal:false,
                 slidesNavigation:true,
@@ -56,7 +61,15 @@
 <!-- data-menuanchor und href muessen mit den oben definierten anchors uebereinstimmen -->
 <ul id="menuVertical">
     <li data-menuanchor="titlePage" class="active"><a href="#titlePage">Start</a></li>
-    <li data-menuanchor="theory" class="active"><a href="#theory">Theorie</a></li>
+    <li data-menuanchor="datenstrukturen" class="active"><a href="#datenstrukturen">Datenstrukturen</a></li>
+    <!--<li data-menuanchor="Generics" class="active"><a href="#Generics">Generics</a></li>-->
+    <!--<li data-menuanchor="Lambdas" class="active"><a href="#Lambdas">Lambdas</a></li>-->
+    <!--<li data-menuanchor="Streams" class="active"><a href="#Streams">Streams</a></li>-->
+    <!--<li data-menuanchor="GUIs mit JavaFX" class="active"><a href="#GUI">GUIs mit JavaFX</a></li>-->
+    <!--<li data-menuanchor="Model und View" class="active"><a href="#Model">Model und View</a></li>-->
+    <li data-menuanchor="theory" class="active"><a href="#theory">Exceptions, Listen, Tabellen</a></li>
+    <!--<li data-menuanchor="Aufteilung des UI" class="active"><a href="#UI">Aufteilung des UI</a></li>
+    <li data-menuanchor="Threads" class="active"><a href="#Threads">Threads</a></li>-->
     <li data-menuanchor="summary"><a href="#summary">Zusammenfassung</a></li>
 </ul>
 
@@ -71,7 +84,7 @@
 
             </div>
 
-            <a href="#theorie">
+            <a href="#datenstrukturen">
                 <svg width="100" height="100" viewBox="0 0 73 38">
                     <g transform="translate(-23 -51)">
                         <path id="arrowDown"transform="matrix(1 0 0 .61 0 35)" d="m23 26 73-1e-6 -37 64z" fill="#ffff00"/>
@@ -81,6 +94,17 @@
         </div>
     </div>
 
+    <div class="section sectionSummary">
+        <div class="infoIcon">!</div><h1>Zusammenfassung</h1>
+
+        <div class="infoCard summary">
+            Inhalt der weissen Box (hoehe veraendert sich mit dem Inhalt)
+            <br><br>
+            weiterer Inhalt
+
+        </div>
+
+    </div>
 
     <!-- Theorie -->
     <div class="section sectionTheory">
@@ -91,22 +115,22 @@
 
 
             <div class="infoCard summary">
-              <p> <p> Vorgehensweise bei einem UI design.<br></p>
-                <br><ul>
+              <u1>Vorgehensweise bei einem UI design.
+              <ul>
               <li>1. Wireframe</li>
               <li>2. Presentation Model</li>
                <li> 3. UI</li>
                 </ul>
-                <br><p>
+                <p>
                 Beim Wireframe entsteht das grundprinzip des Projektes, Beim Presentation Model unterscheidet man zeischen Inhalt
                 und funktionalität
                 Beim UI erstellt man die BIndings.
-                <br>
+
                 FXColections: Observable.Collections
                 ListView hat eine Spalte
                 TableView hat mehrer Spalten
                 beide basieren auf observable
-                <br>
+
                 ex simpleList
                 Test add (1. prüfe ob die liste leer initialisiert is. 2. führe die add Methode durch
                 und prüfe dass das richtige Element hinzugeführt wurde.)
@@ -116,21 +140,21 @@
                 Nachdem die Funktionalität steht muss man diese änderungen im UI
                 hinzufügen.</p>
 
-                <br>
+
                 ex Nationalsammlung:
                 Man hat daten in form einer txt file. Diese sollen tabllarisch dargestellt werden.
                 1. man soll die daten einlesen
 
-                <br>
+
                 Exceptions:
                 public void doSomething () throws Exception {//declares that this method could cause an Exception
-                if ( <Test ob Ausnahmesituation besteht>){
+                if ( <u1 ob Ausnahmesituation besteht>){
                     throw new Exception("so'n Mist“);
                 }
                 // Anweisungen für normale Verarbeitung
                 werfen der Exception Methode wird sofort verlassen
                 Wird ausgeführt falls keine Exception geworfen werden musste
-                }<br>
+                }
                 runtime exceptions (unchecked exceptions) ohne aufwand für Programmierer
                 checked exceptions muss man programmieren.
                 Checked vs Unchecked
@@ -138,7 +162,7 @@
                 Unchecked Exceptions tretten während dem Prgrammieren auf und müssen vom Programmierer behoben werden.
                 finally: Finally kommt an ende des catchblockes und wird egal was ausgeführt.
 
-                </p>
+                  </u1>
 
 
 
@@ -178,13 +202,7 @@
             Inhalt der weissen Box (hoehe veraendert sich mit dem Inhalt)
             <br><br>
             weiterer Inhalt
-
         </div>
-
-    </div>
-
-</div>
-
 
 <script src="js/animation.js"></script>
 

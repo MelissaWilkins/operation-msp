@@ -6,7 +6,10 @@ body h1{
     color:#0B273B;
 }
 body p{
-    font-size: 14px;
+    font-size: 24px;
+}
+body u1{
+    font-size: 24px;
 }
 .section{
     text-align:center;
@@ -42,6 +45,7 @@ body p{
     /*center text*/
     display: flex;
     align-items: left;
+
     /*center div*/
     margin-left: auto;
     margin-right: auto;
@@ -75,8 +79,8 @@ body p{
 /* -------------------- Vertikale Navigation -------------------- */
 #menuVertical {
     position:fixed;
-    top: 120px;
-    left: 60px;
+    top: 190px;
+    left: 100px;
     transform: translate(-50%, -50%);
     background-color:#0B273B;
     opacity:0.8;
@@ -101,7 +105,6 @@ body p{
 #menuVertical a{
     text-decoration: none;
     color:white;
-    font-size: 14px;
 }
 /* -------------------- Ende vertikale Navigation -------------------- */
 
